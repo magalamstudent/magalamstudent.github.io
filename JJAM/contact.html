@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JJAM Collection - Contact Us</title>
+<!-- GOOGLE FONT -->    
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<!-- NORMALIZE CSS -->
+<link href="css/normalize.css" rel="stylesheet"> 
+<!-- HAMBURGER MENU CSS -->
+<link href="css/hamburger.css" rel="stylesheet"> 
+<!-- IMAGE CAROUSEL CSS -->
+<link href="css/carousel.css" rel="stylesheet">
+<!-- LIGHTBOX CSS -->
+<link href="css/lightbox.min.css" rel="stylesheet">     
+<!-- REGULAR CSS -->
+<link href="css/jjam.css" rel="stylesheet">    
+
+</head>
+
+<body>
+<div id="wrapper">
+
+<!-- LOGO -->        
+<header class="logo">
+    <img src="images/Logo_Main.png" alt="logo" class="main_logo">
+</header>    
+    
+<!-- TOP NAVIGATION BAR -->    
+<nav>
+    <ul class="top_nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="kids.html">Kids</a></li>
+        <li><a href="contact.html" class="active_page">Contact Us</a></li>
+    </ul>
+</nav>    
+    
+<!-- START HAMBURGER MENU, HAMBURGER.CSS -->    
+<div class="hamburger_background">
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+    </label>
+    
+    <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="kids.html">Kids</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div> 
+</div>
+<!-- END HAMBURGER MENU -->    
+
+<!-- BANNER -->        
+<div id="banner_container">
+    <picture>
+        <source media="(min-width:768px)" srcset="images/Website%20Sale%20Banner.png">
+        <img src="images/Mobile%20Sale%20Banner.png" alt="banner" class="banner">
+    </picture>
+</div>    
+
+<!-- COLLECTIONS -->
+
+
+<!-- CONTACT -->
+<div class="contact_section">
+<div class="contact_heading">
+    <h1>WE'D LOVE TO HEAR FROM YOU!</h1>
+</div> 
+    <form>
+        <label for="name">Name</label>
+            <input type="text" name="myName" id="myName" size="45">
+        <label for="email">E-mail</label>
+            <input type="text" name="myEmail" id="myEmail" size="45">
+        <label for="myComments">Comments</label>
+            <textarea name="myComments" id="myComments" rows="20" cols="45"></textarea>
+        <input id="mySubmit" type="submit" value="Submit">
+    </form>
+    <div class="contact_address">
+    Location:<br>
+    1390 Amazing St.<br>
+    Fantastic, CA 95032<br>
+    <br>    
+    Tel: 408-239-3201    
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.947182309687!2d-121.98324908503437!3d37.39108134191524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc9dcbc8fbb87%3A0xc49e457b0fb7c58!2sMission%20College!5e0!3m2!1sen!2sus!4v1606728525155!5m2!1sen!2sus" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>    
+    
+<!-- FOOTER -->     
+<footer id="footer">
+<div class="footer_nav">
+    <ul class="footer_hours">
+        <li>Store hours:</li>
+        <li>Mon-Fri: 9AM-9PM</li>
+        <li>Sat-Sun: 8AM-10PM</li>
+    </ul>
+    <ul class="footer_social">
+        <li class="hide">FOLLOW US ON:</li>
+        <div class="social_media">
+            <li><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook logo" height="50"></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram logo" height="50"></a></li>
+            <li><a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter logo" height="50"></a></li>
+        </div>    
+    </ul>
+    <ul class="footer_address">
+        <li>Address:</li>    
+        <li>1390 Amazing St.</li>
+        <li>Fantastic CA 95032</li>
+    </ul>
+</div>    
+    <p class="copyright">Copyright 2020. The JJAM Collection, Inc.</p>
+</footer> 
+    
+</div>
+<script src="js/image-carousel.js"></script> 
+<script src="js/lightbox-plus-jquery.min.js"></script>    
+</body>        
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Marian Galam">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIVIN Collective - Creative Space</title>
+<link rel="stylesheet" href="livin.css">
+<link rel="icon" href="images/namafavicon.png">
+<script>
+function swap(img) {
+  var expandImg = document.getElementById("expandedImg");
+  expandImg.src = img.src;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+<nav>
+	<ul>
+		<li><a href="index.html"><img class="smalllogo" src="images/logo.png" alt="Logo"></a></li>
+		<li><a href="about.html"><h3>About Us</h3></a></li>
+		<li><a href="store.html"><h3>Concept Store</h3></a></li>
+        <li><a href="restaurant.html"><h3>Restaurant</h3></a></li>
+		<li><a href="creative.html"><h3>Creative Space</h3></a></li>
+		<li><a href="press.html"><h3>Press</h3></a></li>
+		<li><a href="contact.html"><h3>Contact Us</h3></a></li>
+	</ul>	
+</nav>
+
+<header>
+	<hr><h1>Creative Space</h1><hr>
+</header>
+
+<section>
+	<div class="intro">
+		<p>We believe in creating a gathering place for the community to come together and collaborate.  Whether you are a student or digital nomad, artist or entrepreneur, everyone is welcome.  We've had the pleasure of hosting numerous art exhibitions, charity events, business conferences and Nha Trang's 1st LGBT Conference, just to name a few.<br>  ***Click on thumbnail to expand the image.***</p>
+	</div>
+	
+<div class="coop-container">
+	<div class="coop-menu">
+	<div id="lgbt">
+  		<img src="images/coop/lgbt.png" onclick="swap(this);">
+	</div>
+	<div id="fairy-cake">
+ 		<img src="images/coop/fairy-cake.png" onclick="swap(this);">
+	</div>
+	<div id="bao-tran">
+		<img src="images/coop/bao-tran.png" onclick="swap(this);">
+	</div>
+	<div id="paint-night">
+		<img src="images/coop/paint-night.png" onclick="swap(this);">
+	</div>
+	<div id="inspiring">
+		<img src="images/coop/inspiring.png" onclick="swap(this);">
+	</div>
+	<div id="meeting">
+  		<img src="images/coop/meeting.png" onclick="swap(this);">
+	</div>
+	<img id="expandedImg" style="width:100%">
+</div></div>
+
+</section>
+
+<footer>
+	<a href="https://g.page/LIVINcollective?share" target="_blank">LIVIN Collective, 77 Bach Dang, Nha Trang, VIETNAM</a><br>
+	<a href="mailto:info@livincollective.com">info@livincollective.com</a><br>
+	<a href="tel:+84918638349">+84 918 638 349</a><br>
+	&#169; 2020 fulifect design co.<br>
+	<ul>
+		<li><a href="https://www.facebook.com/LIVINCollective/" target="_blank"><img src="images/socialmedia/facebook-icon.png" alt="Logo" height="36px"></a></li>
+		<li><a href="https://www.instagram.com/livin_collective/" target="_blank"><img src="images/socialmedia/instagram-icon.png" alt="Logo" height="36px"></a></li>
+		<li><a href="https://g.page/LIVINcollective?share" target="_blank"><img src="images/socialmedia/google-icon.png" alt="Logo" height="36px"></a></li>
+		<li><a href="https://www.tripadvisor.com/Restaurant_Review-g293928-d8073622-Reviews-LIVIN_Collective-Nha_Trang_Khanh_Hoa_Province.html" target="_blank"><img src="images/socialmedia/tripadvisor-icon.png" alt="Logo" height="36px"></a></li>
+	</ul>
+</footer>
+</div>
+</body>
+</html>

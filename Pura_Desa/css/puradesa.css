@@ -1,0 +1,416 @@
+/* 
+Font Families:
+font-family: hucklebuck-jf,sans-serif;
+font-family: Montserrat, sans-serif;
+
+Colors:
+pink: #DC3F5F
+orange: #E94B33
+teal: #5FC29B
+blue: #5F5BAC
+violet: #7A3294
+dark green: #0E4F32
+
+Media queries, min-width:
+desktop 1200px
+laptop  1024px
+tablet  768px
+phone   375px
+*/
+
+/* ---------- FONT COLORS ---------- */
+body {
+    font-family: Montserrat, sans-serif;
+    color: #0E4F32;
+    font-weight: 300;
+}
+.main_nav a {
+    font-family: hucklebuck-jf,sans-serif;
+    text-decoration: none;
+}
+.footer_nav a {
+    font-family: Montserrat,sans-serif;
+    text-decoration: none;
+}
+a.home, .phone_email a, .phone_email li {
+    color: #E94B33;
+}
+a.about, .address a, .address li {
+    color: #DC3F5F;
+}
+a.menu, p.footer {
+    color: #5FC29B;
+}
+a.gallery, .hours a, .hours li {
+    color: #5F5BAC;
+}
+a.contact, .social_media {
+    color: #7A3294;
+}
+.main_nav a:hover {
+    color: lightgrey;
+}
+
+/* ---------- LAYOUT ---------- */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+header, section, footer {
+    display: block;
+}
+@media screen and (min-width: 768px) {
+    #wrapper {
+        padding-top: 130px;
+        padding-bottom: 30px;
+    }
+     /* The header was covering the wrapper at this breakpoint and I didn't know how to fix it.  I already made all the elements display: block, but it didn't work */
+}
+@media screen and (min-width: 1024px) {
+    #wrapper {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 70px;
+        /* The header was covering the wrapper at this breakpoint and I didn't know how to fix it.  I already made all the elements display: block, but it didn't work */
+    } 
+}
+@media screen and (min-width: 1200px) {
+    #wrapper {
+        width: 60%;
+        margin: 0 auto;
+    } 
+}
+
+/* ---------- BACKGROUND IMAGE ---------- */
+body {
+    background-image: url(../images/wallpaper-small.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url(../images/wallpaper-medium.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-attachment: fixed;
+        background-size: auto;                
+    }
+}
+@media screen and (min-width: 1024px) {
+    body {
+        background-image: url(../images/wallpaper-large.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-attachment: fixed;
+        background-size: cover;        
+    }
+}
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../images/wallpaper-XL.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-attachment: fixed;
+        background-size: cover;       
+    }
+}
+
+/* ---------- HEADER ---------- */
+h1.header_title {
+    display: none;
+}
+img.logo {
+    height: 70px;
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    background-color: white;
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    header {
+        position: fixed;
+        display: block;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .header_navbar {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .header_navbar {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* ---------- NAVIGATION ---------- */
+ul.main_nav {
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.75em;
+    margin: 0;
+}
+.main_nav li {
+    padding: 5px 0;
+    margin-left: -40px;
+    /* I don't know why this shows up, it shows up in the element inspector tool, I already set the box-sizing to border-box */
+}
+@media screen and (min-width: 768px) {
+    ul.main_nav {
+        display: block;
+        margin-left: -40px;
+        /* I don't know why this shows up, it shows up in the element inspector tool, I already set the box-sizing to border-box */
+    }
+    .main_nav li {
+        display: inline-block;
+        margin: auto;
+        padding: 10px 20px;
+    }    
+}
+@media screen and (min-width: 1024px) {
+    img.logo {
+        float: left;
+        width: auto;
+    }
+    ul.main_nav  {
+        float: right;
+    }
+    .main_nav li {
+        padding: 20px 10px; 
+    }
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background-color: white;
+    padding: 10px 0;
+    width: 100%;
+    clear: both;
+}
+.footer_bold {
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+ul.phone_email, ul.address, ul.hours, ul.social_media {
+    list-style-type: none;
+    padding: 5px 0;
+    text-align: center;
+}
+.social_media {
+    width: 100%;
+}
+.social_media li {
+    display: inline-block;
+}
+.social_media img {
+    padding: 0 10px;
+}
+p.footer {
+    text-align: center;
+    font-size: .8em;
+    font-weight: 700;
+}
+@media screen and (min-width: 768px) 
+{
+    ul.phone_email, ul.address, ul.hours, ul.social_media {
+        width: 25%;
+        margin: 0;
+        float: left;
+        padding: 10px 0;
+    }
+    p.footer {
+        clear: both;
+        padding: 10px 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .footer_nav {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* ---------- LAYOUT FOR CONTENT ---------- */
+.subtitle {
+    font-family: hucklebuck-jf,sans-serif;
+    font-size: 2.5em;;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+p {
+    margin: 0;
+    padding: 10px 30px;
+    line-height: 1.5em;    
+}
+.about_container, .menu_container, .gallery_container, .contact_container {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+}
+.responsive_image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------- HOMEPAGE ---------- */
+.homepage img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------- ABOUT ---------- */ 
+#about {
+    color: #DC3F5F;
+}
+@media screen and (min-width: 768px) {
+    .about_image {
+        width: 33%;
+        float: left;
+        padding: 10px 0;
+    } 
+}
+
+/* ---------- MENU ---------- */ 
+#menu {
+    color: #5FC29B;
+}
+ul.menu {
+    list-style-type: none;
+    text-align: center;
+    margin-left: -40px;
+        /* I don't know why this shows up, it shows up in the element inspector tool, I already set the box-sizing to border-box */
+}
+.menu_header {
+    font-weight: 700;
+    margin-top: 20px; 
+}
+li.menu_italic {
+    font-style: italic;
+    line-height: 1.5em;
+}
+@media screen and (min-width: 768px) {
+    ul.menu {
+        margin-left: -40px;
+    } 
+    .float_left_menu {
+        width: 33%;
+        float: left;
+        padding: 20px;
+    }
+    .float_middle_menu {
+        width: 33%;
+        float: left;
+    }
+    .float_right_menu {
+        width: 33%;
+        float: right;
+        padding: 20px;
+    }
+}
+
+
+/* ---------- GALLERY ---------- */ 
+#gallery {
+    color: #5F5BAC;
+}
+/* ---------- CSS grid gallery adapted from Rachel Andrew ---------- */ 
+/* keeps the images from leaking out of the containers */
+.gallery_wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+.example-image-link {
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+/* establishes a maximum width for the wrapper and centers it */
+.gallery_wrapper {
+    padding: 10px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+/* applies all these styles to all children the wrapper. * is the universal selector */
+.gallery_wrapper > * {
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* no grid support? */
+/* this allows the use of flexbox in case CSS Grid is not supported by the user's browser */
+.gallery_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery_wrapper {
+    /* this makes the container into a grid container*/
+    display: grid;
+    /* this puts 10px of space between the grid items*/
+    grid-gap: 10px;
+    /*this will create as many columns as will fit, with a minimum size of 200px, as a max of 1fr, which in this case is 100% */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* this creates automatic rows as needed that will be between 150px and auto in height */
+    grid-auto-rows: minmax (100px, auto);
+}
+
+/* needed for the flex layout in case Grid isn't working*/
+..example-image-link {
+    margin-left: 5px;
+    margin-right: 5px;
+    flex: 1 1 200px;
+}
+.gallery_wrapper a:hover {
+    color: white;
+}
+/* ---------- END OF CSS GRID GALLERY ---------- */ 
+
+/* ---------- CONTACT ---------- */ 
+#contact {
+    color: #7A3294;
+}
+input, textarea {
+    margin: 5px 0 20px 0;
+    display: block;
+}
+form {
+    width: 375px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.map_info {
+    text-align: center;
+}
+#mySubmit {
+    margin: 20px auto;
+} 
+iframe {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+@media screen and (min-width: 768px) {
+    .float_left_contact {
+        width: 50%;
+        float: left;
+        padding: 20px;
+    }
+    .float_right_contact {
+        width: 50%;
+        float: right;
+        padding: 20px;        
+    }
+}

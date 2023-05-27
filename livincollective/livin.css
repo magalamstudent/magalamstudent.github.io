@@ -1,0 +1,351 @@
+/* ---------- FONTS ---------- */
+@font-face { 
+	font-family: nexalight;
+    src: url(font/NexaDemo-Light.woff) format("woff");
+}
+@font-face { 
+	font-family: norwester;
+    src: url(font/norwester.otf) format("otf");
+}
+@font-face { 
+	font-family: nexabold;
+    src: url(font/nexa-bold.otf) format("otf");
+}
+
+
+/* ---------- LAYOUT ---------- */
+body {
+	background-image: url(images/tile.png);
+	background-repeat: repeat;
+}
+#wrapper {
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px 0;
+}
+/* https://teamtreehouse.com/community/how-do-i-remove-white-space-between-header-section-footer */
+nav, header, section, footer {
+	background-color: white;
+	overflow: hidden;
+}
+
+/* ---------- NAV ---------- */
+@media only all and (max-width: 1024px) {
+	nav ul {
+		margin: 50px;
+	}
+	nav li {
+		display: block;
+		margin: -25px;
+		text-align: center;
+	}	
+}
+.smalllogo {
+	height: 60px;
+}
+nav ul {
+	list-style-type: none;
+	padding-left: 20px;
+}
+li {
+	display: inline-block;
+	margin: 20px;
+}
+a {
+	text-decoration: none;
+	font-family: nexalight, sans-serif; 
+	color: black;
+	vertical-align: middle;
+}
+a:hover {
+	color: silver;
+}
+h2 {
+	text-align: center;
+}
+
+/* ---------- HEADER ---------- */
+header {
+	padding-bottom: 10px;
+}
+hr {
+	width: 50%;
+}
+h1 {
+	font-family: nexabold, sans-serif;
+	font-size: 24pt;
+	text-align: center;
+	font-weight: normal;
+}
+
+/* ---------- SECTION ---------- */
+section {
+}
+.intro {
+	width: 75%;	
+	margin: 0 auto;
+	font-family: nexalight, sans-serif; 
+	text-align: center;
+	font-size: 14pt;
+	padding-bottom: 24pt;
+}
+.placeholder img {
+	width: 100%;
+}
+
+/* ---------- YOUTUBE VIDEO ---------- */
+@media only all and (max-width: 1024px) {
+	.iframe-container {
+		padding-top: 56.25%;
+		position: relative;
+	}
+	.iframe-container iframe {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+iframe {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+	height: 450px;
+}
+
+/* ---------- MENU TABLE ---------- */
+@media only all and (max-width: 1024px) {
+	.food-menu {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media only all and (min-width: 1024px) {
+	.menu-float-left { 
+		float: left; 
+		padding-left: 150px;
+	}
+	.menu-float-right { 
+		float: right; 
+		padding-right: 150px;
+	}
+}
+.food-menu {
+	display: block;
+	border: 2pt black solid;
+	width: 400px;
+	font-family: nexalight, sans-serif;	
+	font-size: 10pt;
+}
+.food-menu tr:nth-of-type(even){
+	background-color: lightgrey;
+}
+.food-menu td:last-child {
+	text-align: right;
+	color: maroon;
+}
+th {
+	font-family: nexabold, sans-serif;	
+	background-color: black;
+	color: white;
+	width: 400px;
+	padding: 5px;
+	font-size: 14pt;
+}
+.script {
+	font-family: Bradley Hand, cursive;
+	font-size: 10pt;
+}
+.food img {
+	width: 385px;
+}
+
+/* ---------- DESIGNERS TABLE ---------- */
+.designers-container {
+	width: 840px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.designers-container td {
+	padding: 15px;
+}
+.designers-container a {
+	display: inline;
+	float: left;
+	width: 250px;
+	height: 250px;
+	background-image: url(images/conceptstore/sprite-sheet.png);
+}
+
+/* ---------- DESIGNERS SPRITES ---------- */
+#by-campioni {
+	background-position: 0 0;
+}
+#by-campioni:hover {
+	background-position: -255px 0;
+}
+#cao-cuero {
+	background-position: -510px 0;
+}
+#cao-cuero:hover {
+	background-position: -765px 0;
+}
+#d-mia {
+	background-position: -1020px 0;
+}
+#d-mia:hover {
+	background-position: -1275px 0;
+}
+#east-west {
+	background-position: -1530px 0;
+}
+#east-west:hover {
+	background-position: -1785px 0;
+}
+#la-petite {
+	background-position: -2040px 0;
+}
+#la-petite:hover {
+	background-position: -2295px 0;
+}
+#sinhtolina {
+	background-position: -2550px 0;
+}
+#sinhtolina:hover {
+	background-position: -2805px 0;
+}
+#stone-hill {
+	background-position: -3060px 0;
+}
+#stone-hill:hover {
+	background-position: -3315px 0;
+}
+#very-ngon {
+	background-position: -3570px 0;
+}
+#very-ngon:hover {
+	background-position: -3825px 0;
+}
+#zo-project {
+	background-position: -4080px 0;
+}
+#zo-project:hover {
+	background-position: -4335px 0;
+}
+
+
+/* ---------- COOP GALLERY ---------- */
+@media only all and (max-width: 1024px) {
+	.coop-container {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.coop-menu img {
+		display: inline;
+		float: left;
+		width: 60px;
+		padding: 3px;
+	}
+}
+@media only all and (min-width: 1024px) {
+	.coop-container {
+		width: 810px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.coop-menu img {
+		display: inline;
+		float: left;
+		width: 125px;
+		padding: 5px;
+	}
+}
+
+/* ---------- PRESS ---------- */	
+@media only all and (max-width: 1024px) {
+	.press img {
+		height: 400px;
+		width: auto;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.press p, h2 {
+		clear: both;
+	}
+}	
+@media only all and (min-width: 1024px) {
+	.press img {
+		height: 250px;
+		width: auto;
+		float: left;
+		display: inline-block;
+		margin: 25px;
+	}
+	.clear {
+		clear: both;
+	}
+}	
+.press {
+	width: 75%;	
+	margin-left: auto;
+	margin-right: auto;
+}
+.press p, h2 {
+	font-family: nexalight, sans-serif; 
+}
+
+
+/* ---------- CONTACT ---------- */
+@media only all and (max-width: 1024px) {
+	form {
+		font-family: nexalight, sans-serif; 
+		width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}	
+	#mySubmit { 
+		margin-left: 0px; 
+	}
+}
+@media only all and (min-width: 1024px) {
+	label { 
+		float: left;
+		width: 250px;
+		clear: left;
+		text-align: right;
+		padding-right: 10px;
+	}
+	form {
+		font-family: nexalight, sans-serif; 
+		width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}	
+	#mySubmit { 
+		margin-left: 260px; 
+	}
+}	
+input, textarea { 
+	margin-top: 10px;
+	display: block; 
+}
+
+
+/* ---------- FOOTER ---------- */
+footer {
+	text-align: center;
+	padding: 25px 0;
+	font-family: nexalight, sans-serif; 
+	font-size: 10pt;
+}
+footer a {
+	font-size: 12pt;
+	line-height: 1.5
+
+

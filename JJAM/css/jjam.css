@@ -1,0 +1,361 @@
+/* 
+Font Families:
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display SC', serif;
+
+Colors:
+
+Media queries, min-width:
+desktop 1200px
+laptop  1024px
+tablet  768px
+phone   425px
+
+header, nav, article, section, footer {
+    outline: 1pt solid red ;
+}
+*/
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+}
+
+/* ----- WRAPPER ----- */
+@media screen and (min-width: 768px) {
+    #wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #wrapper {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #wrapper {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}
+
+/* ----- HEADER LOGO ----- */
+@media screen and (max-width: 768px) {
+    header.logo {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    header.logo  {
+        display: block;
+        text-align: center;
+    }
+    img.main_logo {
+        width: 30%;
+        height: auto;
+    }
+}
+
+/* ----- TOP NAVIGATION BAR ----- */
+@media screen and (max-width: 768px) {
+    .top_nav {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    ul.top_nav {
+        list-style-type: none;
+    }
+    .top_nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .top_nav li {
+        box-sizing: border-box;
+    }
+    .top_nav a {
+        text-decoration: none;
+        display: block;
+        color: #000;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px 0;
+    }
+    .top_nav a:hover {
+        color: #808080;
+    }
+    a.active_page {
+        text-decoration: underline;
+        font-style: italic;
+    }
+}
+
+/* ----- BANNER ----- */
+#banner_container {
+    display: block;
+    text-align: center;
+}
+img.banner {
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 767px) {
+    #banner_container {
+        padding-top: 65px;
+    }
+} 
+/* ----- TAGLINE ----- */
+img.tagline {
+    width: 75%;
+    margin: 0 auto;
+}
+.mobile_header {
+    display: block;
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+    .tagline {
+        display: none;
+    }
+}
+
+/* ----- SECOND NAVBAR ----- */
+.second_navbar_image {
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 50px 25px 50px;
+}
+@media screen and (min-width: 768px){
+    #second_navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .second_navbar_image {
+        padding: 0;
+        margin-top: 10px;
+    }
+}
+
+/* ----- CAROUSEL ----- */
+.text_slideshow {    
+    font-family: 'Playfair Display SC', serif;
+    color: #000;
+}
+.big_carousel_text {
+    font-size: 2em;
+    padding-bottom: 100px;
+}
+.small_carousel_text {
+    font-size: 1.5em;
+    padding-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+    .big_carousel_text {
+        font-size: 3em;
+        padding-bottom: 200px;
+    }
+    .small_carousel_text {
+        font-size: 2em;
+        padding-bottom: 100px;
+    }
+}
+/* ----- COLLECTION NAVIGATION ----- */
+ul.collection_nav {
+    list-style-type: none;
+}
+.collection_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.collection_nav li {
+    box-sizing: border-box;
+}
+.collection_nav a {
+    text-decoration: none;
+    display: block;
+    color: #000;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.collection_nav a:hover {
+    color: #808080;
+} 
+
+/* ----- COLLECTIONS ----- */
+/* https://codepen.io/sarus/pen/PJGPmy how to make responsive images the same height */
+.collection_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+    .collection_item {
+        margin: 0 10px;
+        width: 33%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .collection_item {
+        margin: 0 10px;
+        width: 100%;
+    }
+}
+.collection_image {
+    width: 100%;
+    margin: 0 auto;
+}
+.collection_heading {
+    text-align: center;
+    text-transform: uppercase;
+}
+.collection_subheading {
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.collection_item a {
+    text-decoration: none;
+    color: #000;
+}
+.garment_name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.garment_description {
+    margin-top: 5px;
+}
+.garment_price {
+    margin: 20px 0 10px 0;
+}
+.sale_green {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.sale_red {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+@media screen and (max-width: 768px) {
+    .collection_wrapper {
+        display: block;
+    }
+    .sale_price {
+        margin-bottom: 50px;
+    }
+}
+.garment_name:hover, .garment_description:hover {
+    color: lightgrey;
+}
+.button {
+    margin: 15px 0 ;
+    padding: 10px;
+}
+.jump {
+    text-align: center;
+}
+.jump img {
+    width: 35%;
+}
+@media screen and (min-width: 768px) {
+    .jump img {
+        width: 15%;
+        margin: 3em 0;
+    }
+}
+@media screen and (min-width: 768px) {
+    .hide_link {
+        display: none;
+    }
+}
+
+
+/* ----- CONTACT ----- */
+.contact_section {
+    background-color: lightgrey;
+}
+iframe {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+}
+.contact_address {
+    font-size: 1.25em;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* ----- FOOTER ----- */
+#footer {
+    background-color: lightgrey;
+    margin-top: 50px
+}
+.contact_heading {
+    text-align: center;
+    padding-top: 3em;
+}
+.footer_hours, .footer_social, .footer_address {
+    padding: 20px;
+}
+.social_media {
+    text-align: center;
+}
+.social_media li {
+    display: inline-block;
+    padding: 10px
+}
+.footer_hours li, .footer_social li, .footer_address li {
+    list-style-type: none;
+    line-height: 1.5em; 
+    text-align: center; 
+}
+.copyright {
+    text-align: center;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+    #footer {
+        background-color: #fff;
+    }
+    .footer_hours, .footer_address {
+        display: none;
+    }
+    .hide  {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .footer_nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+input, textarea {
+    margin: 5px 0 20px 0;
+    display: block;
+}
+form {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 50px
+}
+.collection_image img {
+    overflow: hidden;
+}

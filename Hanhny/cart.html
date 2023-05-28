@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Marian Galam">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hanhny</title>
+<link rel="stylesheet" href="hanhny.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Cormorant+SC:300,500" >
+</head>
+
+<body>
+<header id="hero">
+<img src="images/template/hero.svg" alt="watercolor logo">
+<h1>Hanhny</h1>
+<h2>wearable works of art</h2>
+</header>
+
+<div id="wrapper">
+<nav>
+	<hr>
+	<div class="navigation">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="shopping.html">Shopping</a></li>
+		<li><a href="cart.html">Cart</a></li>
+		<li><a href="press.html">Press</a></li>
+	</ul>
+	</div>
+	<hr>
+</nav>
+
+<section class="main">
+
+<form method="post" action="mailto:info@hanhny.com" enctype="text/plain" onsubmit="window.alert('Your info has been mailed')">
+Fill out this form to place your order or send us a message:
+<fieldset id="customer_info">
+	<legend>Customer Information</legend>
+	<ul>
+		<li>
+			<label for="customer-name">Your Name:</label>
+			<input type="text" name="customer" id="customer-name" class="textinput" maxlength="20">
+		</li>
+		<li>
+			<label for="customer-email">Address:</label>
+			<input type="address" name="address" id="customer-address" class="textinput" maxlength="40">
+		</li>
+		<li>
+			<label for="customer-email">City:</label>
+			<input type="city" name="city" id="customer-city" class="textinput" maxlength="40">
+		</li>
+		<li>
+			<label for="customer-email">Email:</label>
+			<input type="email" name="email" id="customer-email" class="textinput" maxlength="40">
+		</li>
+		<li>
+			<label for="customer-state">State:</label>
+			<input type="text" name="state" id="customer-state" class="textinput" maxlength="40" size="2">
+		</li>
+		<li>
+			<label for="customer-country">Country:</label>
+			<select name="country" id="customer-country">
+				<!-- size="3" multiple -->
+				<option selected="selected">USA</option>
+				<option>Canada</option>
+				<option>Mexico</option>
+			</select>
+		</li>
+	</ul>
+</fieldset>
+Special Instructions:
+<br>
+<textarea name="instructions" cols="40" rows="10">
+Type your special instructions here.
+</textarea>
+<input type="hidden" name="success" value="success.htm">
+<br>
+<input type="submit" value="send">
+<input type="reset" value="clear">
+<!--input type="image" src="button1.gif" alt="submit"-->
+</form>	
+
+</section>
+</div>
+<footer>
+	<a href="mailto:info@hanhny.com">info@hanhny.com</a>
+	<br>
+	<a href="tel:+14088334533">(408)833-4533</a>
+	<p>&#169; 2020 Marian Galam</p>
+	<ul>
+		<li><a href="https://www.facebook.com/hanhnydesign/" target="_blank"><img src="images/socialmedia/facebook.svg" alt="Logo" height="50"></a></li>
+		<li><a href="https://www.instagram.com/hanhnydesign/" target="_blank"><img src="images/socialmedia/instagram.svg" alt="Logo" height="50"></a></li>
+		<li><a href="https://twitter.com/hanhny" target="_blank"><img src="images/socialmedia/twitter.svg" alt="Logo" height="50"></a></li>
+		<li><a href="https://vimeo.com/hanhny" target="_blank"><img src="images/socialmedia/vimeo.svg" alt="Logo" height="50"></a></li>
+		<li><a href="https://www.pinterest.com/Hanhnydesign/"  target="blank"><img src="images/socialmedia/pinterest.svg" alt="Logo" height="50"></a></li>
+	</ul>
+</footer>
+</body>
+</html>

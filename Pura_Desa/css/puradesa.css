@@ -122,8 +122,9 @@ h1.header_title {
 }
 img.logo {
     height: 70px;
-    float: center;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 header {
     background-color: white;

@@ -1,15 +1,15 @@
 /* ---------- FONTS ---------- */
 @font-face { 
-	font-family: nexalight;
-    src: url(font/NexaDemo-Light.woff) format("woff");
+	font-family: avenir;
+    src: url(font/Avenir.ttc) format("ttc");
 }
 @font-face { 
 	font-family: norwester;
     src: url(font/norwester.otf) format("otf");
 }
 @font-face { 
-	font-family: nexabold;
-    src: url(font/nexa-bold.otf) format("otf");
+	font-family: Futura;
+    src: url(font/Futura.ttc) format("ttc");
 }
 
 
@@ -54,7 +54,7 @@ li {
 }
 a {
 	text-decoration: none;
-	font-family: nexalight, sans-serif; 
+	font-family: helvetica, sans-serif; 
 	color: black;
 	vertical-align: middle;
 }
@@ -73,7 +73,7 @@ hr {
 	width: 50%;
 }
 h1 {
-	font-family: nexabold, sans-serif;
+	font-family: futura, sans-serif;
 	font-size: 24pt;
 	text-align: center;
 	font-weight: normal;
@@ -85,7 +85,7 @@ section {
 .intro {
 	width: 75%;	
 	margin: 0 auto;
-	font-family: nexalight, sans-serif; 
+	font-family: avenir, sans-serif; 
 	text-align: center;
 	font-size: 14pt;
 	padding-bottom: 24pt;
@@ -184,7 +184,7 @@ iframe {
 	display: block;
 	border: 2pt black solid;
 	width: 400px;
-	font-family: nexalight, sans-serif;	
+	font-family: avenir, sans-serif;	
 	font-size: 10pt;
 }
 .food-menu tr:nth-of-type(even){
@@ -195,7 +195,7 @@ iframe {
 	color: maroon;
 }
 th {
-	font-family: nexabold, sans-serif;	
+	font-family: futura, sans-serif;	
 	background-color: black;
 	color: white;
 	width: 400px;
@@ -343,14 +343,14 @@ th {
 	margin-right: auto;
 }
 .press p, h2 {
-	font-family: nexalight, sans-serif; 
+	font-family: avenir, sans-serif; 
 }
 
 
 /* ---------- CONTACT ---------- */
 @media only all and (max-width: 1024px) {
 	form {
-		font-family: nexalight, sans-serif; 
+		font-family: avenir, sans-serif; 
 		width: 200px;
 		margin-left: auto;
 		margin-right: auto;
@@ -369,7 +369,7 @@ th {
 		padding-right: 10px;
 	}
 	form {
-		font-family: nexalight, sans-serif; 
+		font-family: avenir, sans-serif; 
 		width: 700px;
 		margin-left: auto;
 		margin-right: auto;
@@ -394,7 +394,7 @@ textarea {
 footer {
 	text-align: center;
 	padding: 25px 0;
-	font-family: nexalight, sans-serif; 
+	font-family: avenir, sans-serif; 
 	font-size: 10pt;
 }
 footer a {

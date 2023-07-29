@@ -203,8 +203,9 @@ th {
 	font-size: 14pt;
 }
 .script {
-	font-family: Bradley Hand, cursive;
-	font-size: 10pt;
+	font-family: avenir, cursive;
+	font-style: italic;
+    font-size: 10pt;
 }
 .food img {
 	width: 385px;

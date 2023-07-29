@@ -28,23 +28,76 @@
 </header>
 
 <section>
-	<div class="placeholder">
-		<img src="images/atrium.jpg" alt="atrium">
+<!--	<div class="placeholder">
+		<img src="images/index/atrium.jpg" alt="atrium">
 	</div>
+-->
+    <!--  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow -->
+    <div class="slideshow-container"> 
+
+<div class="mySlides fade">
+  <img src="images/index/atrium.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/index/MuralFamily.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/index/selfiegirls.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/index/welcomemural.png" style="width:100%">
+</div>
+    
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+    <span class="dot"></span> 
+</div>
+
+    
 </section>
 
 <footer>
 	<a href="https://g.page/LIVINcollective?share" target="_blank">LIVIN Collective, 77 Bach Dang, Nha Trang, VIETNAM</a><br>
 	<a href="mailto:info@livincollective.com">info@livincollective.com</a><br>
 	<a href="tel:+84918638349">+84 918 638 349</a><br>
-	&#169; 2020 Marian Galam<br>
+	&#169; 2020 fulifect design co.<br>
 	<ul>
-		<li><a href="https://www.facebook.com/livinnhatrang/" target="_blank"><img src="images/socialmedia/facebook-icon.png" alt="Logo" height="36px"></a></li>
-		<li><a href="https://www.instagram.com/livinnhatrang/" target="_blank"><img src="images/socialmedia/instagram-icon.png" alt="Logo" height="36px"></a></li>
+		<li><a href="https://www.facebook.com/LIVINCollective/" target="_blank"><img src="images/socialmedia/facebook-icon.png" alt="Logo" height="36px"></a></li>
+		<li><a href="https://www.instagram.com/livin_collective/" target="_blank"><img src="images/socialmedia/instagram-icon.png" alt="Logo" height="36px"></a></li>
 		<li><a href="https://g.page/LIVINcollective?share" target="_blank"><img src="images/socialmedia/google-icon.png" alt="Logo" height="36px"></a></li>
 		<li><a href="https://www.tripadvisor.com/Restaurant_Review-g293928-d8073622-Reviews-LIVIN_Collective-Nha_Trang_Khanh_Hoa_Province.html" target="_blank"><img src="images/socialmedia/tripadvisor-icon.png" alt="Logo" height="36px"></a></li>
 	</ul>
 </footer>
 </div>
+    <script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
 </body>
 </html>

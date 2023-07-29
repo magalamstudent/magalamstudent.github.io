@@ -105,9 +105,9 @@ section {
 .mySlides {display: none;}
 
 .slideshow-container {
-  width: 75%;
-  display: block;
-  margin: 0 auto;	
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
 /* The dots/bullets/indicators */

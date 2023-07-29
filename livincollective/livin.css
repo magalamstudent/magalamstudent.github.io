@@ -3,11 +3,6 @@
 	font-family: avenir;
     src: url(font/Avenir.ttc) format("ttc");
 }
-@font-face { 
-	font-family: norwester;
-    src: url(font/norwester.otf) format("otf");
-}
-
 
 /* ---------- LAYOUT ---------- */
 body {
@@ -72,7 +67,7 @@ h1 {
 	font-family: avenir, sans-serif;
 	font-size: 24pt;
 	text-align: center;
-	font-weight: normal;
+	font-weight: bold;
 }
 
 /* ---------- SECTION ---------- */

@@ -93,6 +93,53 @@ section {
 .placeholder img {
 	width: 100%;
 }
+.placeholder_half img {
+	width: 75%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 24px;
+}
+
+
+/* ---------- Slideshow container https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow ----------*/
+.mySlides {display: none;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .85} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
 
 /* ---------- YOUTUBE VIDEO ---------- */
 @media only all and (max-width: 1024px) {
@@ -326,14 +373,20 @@ th {
 		width: 700px;
 		margin-left: auto;
 		margin-right: auto;
+        display: block;
 	}	
 	#mySubmit { 
 		margin-left: 260px; 
 	}
 }	
-input, textarea { 
+input { 
 	margin-top: 10px;
 	display: block; 
+}
+textarea {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 

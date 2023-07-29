@@ -7,10 +7,6 @@
 	font-family: norwester;
     src: url(font/norwester.otf) format("otf");
 }
-@font-face { 
-	font-family: Futura;
-    src: url(font/Futura.ttc) format("ttc");
-}
 
 
 /* ---------- LAYOUT ---------- */
@@ -73,7 +69,7 @@ hr {
 	width: 50%;
 }
 h1 {
-	font-family: futura, sans-serif;
+	font-family: avenir, sans-serif;
 	font-size: 24pt;
 	text-align: center;
 	font-weight: normal;
@@ -195,7 +191,7 @@ iframe {
 	color: maroon;
 }
 th {
-	font-family: futura, sans-serif;	
+	font-family: avenir, sans-serif;	
 	background-color: black;
 	color: white;
 	width: 400px;

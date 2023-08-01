@@ -8,6 +8,8 @@ medium: 768px
 large: 992px
 */
 
+
+
 *, *:before, *:after {
     box-sizing: border-box;
 }
@@ -25,6 +27,7 @@ h1 {
 .navbar {
     background-color: #000!important;
     padding: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 .active {
     background-color: #439187;

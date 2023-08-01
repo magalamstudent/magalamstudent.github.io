@@ -8,16 +8,11 @@ medium: 768px
 large: 992px
 */
 
-@font-face {
-    font-family: prata;
-    src: url(font/Prata-Regular.ttf) format("ttf");
-}
-
 *, *:before, *:after {
     box-sizing: border-box;
 }
 body {
-    font-family: prata, serif;
+    font-family: 'Prata', san-serif;
 }
 html {
     scroll-behavior: smooth;

@@ -8,8 +8,6 @@ medium: 768px
 large: 992px
 */
 
-
-
 *, *:before, *:after {
     box-sizing: border-box;
 }

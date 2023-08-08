@@ -395,6 +395,17 @@ textarea {
     margin-right: auto;
     display: block;
 }
+.hours {
+	width: 75%;	
+	margin: 0 auto;
+	font-family: avenir, sans-serif; 
+	text-align: center;
+	font-size: 12pt;
+	padding: 10pt;
+}
+iframe {
+    margin-top: 10px;
+}
 
 
 /* ---------- FOOTER ---------- */

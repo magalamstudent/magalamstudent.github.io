@@ -392,11 +392,6 @@ th {
         display: block;
 	}
 }
-.contact_container {
-    display: inline-block;
-    width: 100%;
-    margin: 0 auto;
-}
 input, select { 
 	margin-bottom: 10px;
 	display: block; 
